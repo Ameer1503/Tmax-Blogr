@@ -451,7 +451,7 @@ footer{
         overflow: hidden;
         background-position: center;
         background-size: 200%;
-        padding: 4rem 4rem;
+        padding: 4rem 2rem;
     }
     nav{
         justify-content: space-between;
@@ -468,7 +468,7 @@ footer{
 
     .right-nav img{
         display: block;
-        margin-left: 4rem;
+        margin-left: 0rem;
         padding: 15px;
     }
     .intro-head{
