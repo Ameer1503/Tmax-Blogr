@@ -505,7 +505,10 @@ footer{
         margin: 10px;
         font-weight: 700;
         
+    }
+    .buttns a div{
         
+        font-size: 12px;
     }
     .buttns a:first-child{
         color: hsl(353, 100%, 62%);
