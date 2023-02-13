@@ -434,7 +434,7 @@ footer{
     text-decoration: none;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 380px) {
     html{
         font-family: "Ubuntu", sans-serif;
     }
@@ -447,11 +447,11 @@ footer{
     }
     .image-background{
         background: url(images/bg-pattern-intro-mobile.svg);
-        background-size:cover;
+        background-size: cover;
         overflow: hidden;
         background-position: center;
-        background-size: 100%;
-        padding: 4rem 10rem;
+        background-size: 200%;
+        padding: 4rem 4rem;
     }
     nav{
         justify-content: space-between;
