@@ -87,6 +87,7 @@ nav img .hamburger{
     display: flex;
     justify-content: center;
     margin-left: 35px;
+    transition: visibility 0s, opacity 1s linear;
 }
 .left-nav li:hover .dropdown-conts div:nth-child(2){
     margin-left: 40px;
@@ -105,6 +106,7 @@ nav img .hamburger{
     border-radius: 5px;
     box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
     text-align: center;
+
 }
 .left-nav li:hover .dropdown-conts ul li{
     padding:0 0 ;
@@ -150,9 +152,13 @@ nav img .hamburger{
 }
 .right-nav a:nth-child(2) {
 
-    color: hsl(353, 100%, 62%);
+    color: hsl(355, 100%, 74%);
     text-align: center;
     background-color: white;
+}
+.right-nav a:hover{
+    background:hsl(355, 100%, 74%);
+    color:white;
 }
 /* nav ul a {
     float: left;
@@ -202,6 +208,11 @@ nav img .hamburger{
     border-radius: 40px;
     text-align: center;
     
+}
+.buttns a:hover{
+    background:hsl(355, 100%, 74%);
+    color:white;
+    border-color: hsl(355, 100%, 74%);
 }
 .buttns a div{
     padding-top: 7px;
