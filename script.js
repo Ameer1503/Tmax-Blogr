@@ -1,10 +1,16 @@
-const dropdowns = document.querySelectorAll(".dropdown");
+var btn = document.getElementById("mobilemenu");
+var mobilenav = document.getElementById("mobilenav");
 
-dropdowns.forEach(dropdown => {
-  dropdown.addEventListener("mouseenter", function() {
-    this.querySelector(".product").style.display = "block";
-  });
-  dropdown.addEventListener("mouseleave", function() {
-    this.querySelector(".dropdown-content").style.display = "none";
-  });
-});
+mobilenav.style.left = "-100%";
+
+btn.onclick = function(){
+    if(mobilenav.style.left == "-100%"){
+        mobilenav.style.left = "50%";
+        btn.src = "images/icon-close.svg";
+    }
+
+    else{
+        mobilenav.style.left = "-100%";
+        btn.src = "images/icon-hamburger.svg";
+    }
+}

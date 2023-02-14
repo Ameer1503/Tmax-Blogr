@@ -221,6 +221,10 @@ nav img .hamburger{
     padding-top: 7px;
 }
 
+.mobilenav{
+    display: none;
+}
+
 .Section-intro h2{
     font-size: 2.5rem;
     color: hsl(208, 49%, 24%);
@@ -466,10 +470,111 @@ footer{
         display: none;
     }
 
+
     .right-nav img{
         display: block;
         margin-left: 0rem;
         padding: 15px;
+    }
+    #mobilenav{
+        display: block;
+        position: absolute;
+        top: 8.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 85%;
+        padding: 2rem 1.5rem;
+        background: hsl(0, 0%, 100%);
+        box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        border: none;
+        border-radius: .5rem;
+        z-index: 10;
+        transition: 1.2s;
+    }
+
+    .mobilenav ul li{
+        list-style: none;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobilenav ul li a{
+        text-decoration: none;
+        color: hsl(240, 10%, 16%);
+        font-size: 1.2rem;
+        font-weight: 300;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+    }
+
+    .mobilenav ul li img{
+        margin-left: .5rem;
+        transition: .5s;
+    }
+
+    .mobilenav ul li:nth-child(3){
+        position: relative;
+    }
+
+    .mobilenav ul li:hover img{
+        transform: rotate(-180deg);
+    }
+
+    .mobilenav ul .connect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobilenav ul .connect .connect-text{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobilenav ul .connect .dropdown-menu-mobile{
+        background: hsl(0, 10%, 92%);
+        padding: 1.5rem 0;
+        width: 100%;
+        border-radius: .5rem;
+        display: none;
+        transition: 2s;
+    }
+
+    .mobilenav ul .connect:hover .dropdown-menu-mobile{
+        display: block;
+    }
+
+    .mobilenav ul .connect .dropdown-menu-mobile li:last-child{
+        margin-bottom: 0;
+    }
+
+    .mobilenav ul hr{
+        display: block;
+        border: none;
+        border-top: 1px solid hsl(0, 4%, 85%);
+        margin: 2rem auto 2rem;
+        width: 100%;
+    }
+
+    .mobilenav ul .signup{
+        margin-bottom: 0;
+    }
+
+    .mobilenav ul .signup a{
+        padding: .8rem 2.5rem;
+        background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+        color: hsl(0, 0%, 100%);
+        border-radius: 2rem;
+        transition: .5s;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+    }
+
+    .mobilenav ul .signup a:hover{
+        background: linear-gradient(90deg, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
     }
     .intro-head{
         margin-top: 8rem;
@@ -526,8 +631,8 @@ footer{
     }
     .Section-intro h2{
         font-size: 2rem;
-        margin-top: 10rem;
-        margin-bottom: 8rem;
+        margin-top: 7rem;
+        margin-bottom: 5rem;
     }
     .Section-intro{
         width: 100%;
@@ -547,7 +652,7 @@ footer{
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        margin-bottom: 100px;
+        margin-bottom: 3rem;
     
     }
     .text{
@@ -604,7 +709,7 @@ footer{
     .Section-middle{
         width: 100%;
         flex-direction: column;
-        height: 100vh;
+        height: 85vh;
         padding: 1rem 1rem;
     }
     .Section-middle-img{
@@ -682,7 +787,6 @@ footer{
         display: flex;
         width: 100%;
         overflow:hidden;
-        transform: translateY(50%);
         justify-content: center;
 
     }
@@ -690,7 +794,7 @@ footer{
         position: relative;
         width: 100%;
         right: 0;
-        padding: 15rem 1rem 0rem 1rem;
+        padding: 5rem 1rem 0rem 1rem;
         overflow: hidden;
     }
 
