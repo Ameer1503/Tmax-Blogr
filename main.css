@@ -490,7 +490,6 @@ footer{
         border: none;
         border-radius: .5rem;
         z-index: 10;
-        transition: .5s;
     }
 
     .mobilenav ul li{
